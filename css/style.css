@@ -71,6 +71,7 @@ p {
 .text-white {
   color: #fff;
 }
+
 /* links */
 a {
   text-decoration: none;
@@ -199,6 +200,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: background 0.3s ease-out;
 }
 .btn .icon {
   width: 2rem;
@@ -342,7 +344,7 @@ a {
   margin-bottom: 2rem;
 }
 .plan--popular {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .plan--popular .card__header {
   position: relative;
@@ -685,4 +687,24 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
